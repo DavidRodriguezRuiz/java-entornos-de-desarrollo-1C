@@ -12,24 +12,9 @@ public class Persona {
     public Persona() {
     }
 
-    /**
-     * 
-     */
     private String dni;
-
-    /**
-     * 
-     */
     private String nombre;
-
-    /**
-     * 
-     */
     private String apellidos;
-
-    /**
-     * 
-     */
     private int edad;
 
     /**
@@ -39,7 +24,10 @@ public class Persona {
      * @param edad
      */
     public Persona(String dni, String nombre, String apellidos, int edad) {
-        // TODO implement here
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
     }
 
     /**
@@ -47,8 +35,7 @@ public class Persona {
      * @return
      */
     public String getDni() {
-        // TODO implement here
-        return "";
+        return dni;
     }
 
     /**
@@ -56,7 +43,7 @@ public class Persona {
      * @param dni
      */
     public void setDni(String dni) {
-        // TODO implement here
+    	this.dni = dni;
     }
 
     /**
@@ -64,8 +51,7 @@ public class Persona {
      * @return
      */
     public String getNombre() {
-        // TODO implement here
-        return "";
+        return nombre;
     }
 
     /**
@@ -73,7 +59,7 @@ public class Persona {
      * @param nombre
      */
     public void setNombre(String nombre) {
-        // TODO implement here
+    	this.nombre = nombre;
     }
 
     /**
@@ -81,8 +67,7 @@ public class Persona {
      * @return
      */
     public String getApellidos() {
-        // TODO implement here
-        return "";
+        return apellidos;
     }
 
     /**
@@ -90,7 +75,7 @@ public class Persona {
      * @param apellidos
      */
     public void setApellidos(String apellidos) {
-        // TODO implement here
+    	this.apellidos = apellidos;
     }
 
     /**
@@ -98,8 +83,7 @@ public class Persona {
      * @return
      */
     public int getEdad() {
-        // TODO implement here
-        return 0;
+        return edad;
     }
 
     /**
@@ -107,7 +91,7 @@ public class Persona {
      * @param edad
      */
     public void setEdad(int edad) {
-        // TODO implement here
+    	this.edad = edad;
     }
 
 }
