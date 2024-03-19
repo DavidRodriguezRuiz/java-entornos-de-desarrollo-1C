@@ -1,6 +1,5 @@
 package modelos;
 import java.util.*;
-
 public class Rectangulo {
 
     /**
@@ -9,10 +8,6 @@ public class Rectangulo {
     private int base;
     private int altura;
 	
-    public Rectangulo() {
-    	this.base = 1;
-        this.altura = 1;
-    }
     /**
      * Constructor por defecto con las demás variables.
      * @param base 
@@ -22,9 +17,10 @@ public class Rectangulo {
         this.base = base;
         this.altura = altura;
     }
-
-    public void Rectangulo() {
-        // TODO implement here
+    
+    public Rectangulo() {
+    	this.base = 1;
+        this.altura = 1;
     }
 
     /**
@@ -32,8 +28,7 @@ public class Rectangulo {
      * @return
      */
     public int getBase() {
-        // TODO implement here
-        return 0;
+        return base;
     }
 
     /**
@@ -41,7 +36,7 @@ public class Rectangulo {
      * @param base
      */
     public void setBase(int base) {
-        // TODO implement here
+    	this.base = base;
     }
 
     /**
@@ -49,8 +44,7 @@ public class Rectangulo {
      * @return
      */
     public int getAltura() {
-        // TODO implement here
-        return 0;
+        return altura;
     }
 
     /**
@@ -58,7 +52,7 @@ public class Rectangulo {
      * @param altura
      */
     public void setAltura(int altura) {
-        // TODO implement here
+        this.altura = altura;
     }
 
     /**

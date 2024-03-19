@@ -1,7 +1,6 @@
-
+package modelos;
 import java.util.*;
-
-public class Rectangulo {
+public class Triangulo {
 
     /**
      * Default constructor
@@ -9,31 +8,27 @@ public class Rectangulo {
     private int base;
     private int altura;
 	
-    public Rectangulo() {
-    	this.base = 1;
-        this.altura = 1;
-    }
     /**
      * Constructor por defecto con las demás variables.
      * @param base 
      * @param altura
      */
-    public void Rectangulo(int base, int altura) {
+    public void Triangulo(int base, int altura) {
         this.base = base;
         this.altura = altura;
     }
-
-    public void Rectangulo() {
-        // TODO implement here
+    
+    public Triangulo() {
+    	this.base = 1;
+        this.altura = 1;
     }
-
+    
     /**
      * Obtener la variable "Base".
      * @return
      */
     public int getBase() {
-        // TODO implement here
-        return 0;
+        return base;
     }
 
     /**
@@ -41,7 +36,7 @@ public class Rectangulo {
      * @param base
      */
     public void setBase(int base) {
-        // TODO implement here
+        this.base = base;
     }
 
     /**
@@ -49,8 +44,7 @@ public class Rectangulo {
      * @return
      */
     public int getAltura() {
-        // TODO implement here
-        return 0;
+        return altura;
     }
 
     /**
@@ -62,21 +56,12 @@ public class Rectangulo {
     }
 
     /**
-     * Calcular el area de un rectangulo.
-     * (Base * Altura)
+     * Calcular el area de un triangulo.
+     * ((Base) * (Altura)/2)
      * @return
      */
     public int area() {
-        return base * altura;
-    }
-
-    /**
-     * Calcular el perimetro de un rectangulo.
-     * ((Base * 2) + (2* Altura))
-     * @return
-     */
-    public int perimetro() {    
-        return ((2*base) + (2*altura));
+    	return ((base) * (altura)/2);
     }
 
 }
