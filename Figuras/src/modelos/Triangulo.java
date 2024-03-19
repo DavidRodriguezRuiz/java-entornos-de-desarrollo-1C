@@ -13,12 +13,12 @@ public class Triangulo {
      * @param base 
      * @param altura
      */
-    public void Triangulo(int base, int altura) {
+    public Triangulo(int base, int altura) {
         this.base = base;
         this.altura = altura;
     }
     
-    public Triangulo() {
+    public void Triangulo() {
     	this.base = 1;
         this.altura = 1;
     }

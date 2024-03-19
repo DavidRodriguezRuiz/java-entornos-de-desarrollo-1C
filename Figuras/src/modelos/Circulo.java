@@ -11,11 +11,11 @@ public class Circulo {
      * Constructor por defecto con las demás variables.
      * @param radio
      */
-    public void Circulo(int radio) {
+    public Circulo(int radio) {
         this.radio = radio;
     }
 	
-    public Circulo() {
+    public void Circulo() {
     	this.radio = 1;
     }
 

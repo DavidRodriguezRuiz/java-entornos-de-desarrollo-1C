@@ -6,11 +6,11 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		Rectangulo r1 = new Rectangulo();
+		Rectangulo r1 = new Rectangulo(2,5);
 		
-		Circulo c1 = new Circulo();
+		Circulo c1 = new Circulo(6);
 		
-		Triangulo t1 = new Triangulo();
+		Triangulo t1 = new Triangulo(3,4);
 		
 		int area1 = r1.area();
 		int perimetro1 = r1.perimetro();
