@@ -16,8 +16,8 @@ public class TestAlgoritmos {
 	
 	@Test
 	void factorial() {
-		int sumaEsperada = 136;
-		int sumaObtenida = Algoritmos.factorial(5);	
-		assertEquals(sumaEsperada, sumaObtenida);
+		int factorialEsperado = 120;
+		int factorialObtenido = Algoritmos.factorial(5);	
+		assertEquals(factorialEsperado, factorialObtenido);
 	}
 }
