@@ -29,6 +29,9 @@ public abstract class Algoritmos {
      * @return			total del sumatorio del numero especificado.
      */
 	public static int sumatorio(int numero) {
+		if (numero < 0) {
+			throw new IllegalArgumentException("El número debe ser igual o superior a 0.");
+		}
 		int total = 0;
 		for (int i=1; i<=numero; i++) {
 			total = total + i;
@@ -43,7 +46,7 @@ public abstract class Algoritmos {
      * @return			total del factorial del numero especificado.
      */
 	public static int factorial(int numero) {
-		int total = 0;
+		int total = 1;
 		for (int i=1; i<=numero; i++) {
 			total = total * i;
 		}
